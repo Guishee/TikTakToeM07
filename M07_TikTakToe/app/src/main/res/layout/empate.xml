@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cuadro2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/message22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="¡El tiempo ha terminado!¡Empate!"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+        <ImageView
+            android:id="@+id/ganador2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/message22"
+            android:src="@drawable/lose"/>
+        <TextView
+            android:id="@+id/message3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Quieres reiniciar?"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:layout_below="@+id/ganador2"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/message3">
+
+            <Button
+                android:id="@+id/yes_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sí" />
+
+            <Button
+                android:id="@+id/no_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

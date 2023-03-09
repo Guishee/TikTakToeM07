@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilMenu">
+    <ImageView
+        android:id="@+id/logoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logoperfil"
+        android:scaleType="fitXY"/>
+
+
+    <ImageView
+        android:id="@+id/logoWin"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/logoPerfil"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/fotoperfil"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/logoWin"
+        android:layout_below="@+id/logoPerfil"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Paquitox"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/logoWin"
+        android:layout_below="@+id/logoPerfil"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="paquitox@gmail.com"
+        android:textSize="20dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/logoLose"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/logoWin"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/win"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/logoWin"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="6(60%)"
+        android:textSize="60dp"/>
+
+
+    <ImageView
+        android:id="@+id/logoCancel"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/logoLose"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/lose"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/logoWin"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="4"
+        android:textSize="60dp"/>
+
+
+    <ImageButton
+        android:id="@+id/atrasPerfil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/flechab"
+        android:background="@color/white"/>
+
+
+
+
+</RelativeLayout>
